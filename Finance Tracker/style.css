@@ -1,0 +1,226 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  background-color: #233329;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.total-amount-container,
+.user-amount-container {
+  margin-bottom: 20px;
+}
+
+input[type='number'],
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button.submit {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+  background-color: #45a049;
+}
+
+.output-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.output-container p {
+  font-weight: bold;
+}
+
+.output-container span {
+  font-size: 1.2rem;
+}
+
+.list {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.list-container {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.list-container div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Additional styles for better aesthetics and functionality */
+
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.sub-container {
+  display: grid;
+  gap: 20px;
+}
+
+.total-amount-container,
+.user-amount-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.total-amount-container h3,
+.user-amount-container h3 {
+  color: #4caf50;
+}
+
+.total-amount-container input[type='number'],
+.user-amount-container input[type='text'],
+.user-amount-container input[type='number'] {
+  background-color: #f9f9f9;
+}
+
+.user-amount-container input[type='text']::placeholder,
+.user-amount-container input[type='number']::placeholder {
+  color: #aaa;
+}
+
+.output-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.output-container div {
+  text-align: center;
+}
+
+.output-container p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.output-container span {
+  font-size: 1.5rem;
+  color: #4caf50;
+}
+
+.list {
+  margin-top: 40px;
+}
+
+.list h3 {
+  color: #4caf50;
+}
+
+.list-container {
+  background-color: #f9f9f9;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.list-container div {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.list-container div:last-child {
+  border-bottom: none;
+}
+
+.list-container div span {
+  color: #888;
+}
+
+.list-container div .delete-btn {
+  color: #ff0000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.list-container div .delete-btn:hover {
+  color: #cc0000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  input[type='number'],
+  input[type='text'] {
+    font-size: 0.9rem;
+  }
+
+  button.submit {
+    font-size: 0.9rem;
+  }
+}
